@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import './Habit.css';
+interface HabitProps {
+  completed: number
+}
 
-function Habit() {
-  const [count, setCount] = useState(0)
+function Habit(props: HabitProps) {
   return (
-   <p>Habit</p>
+   <p>{props.completed}</p>
   )
 }
 
